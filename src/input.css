@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #000;
+}
+
+@layer components{
+
+    .container{
+        @apply max-w-[1306px] px-5 mx-[auto]
+    }
+
+    .sale{
+        @apply w-12 h-12 absolute flex justify-center items-center top-0 right-0 text-base leading-normal text-white rounded-full bg-[#ff4a4a]
+    }
+
+    .btn{
+        @apply inline-block py-2 px-5 font-bold text-lg leading-normal text-black border rounded-[7px] bg-transparent transition hover:opacity-80 active:opacity-60
+    }
+
+}
